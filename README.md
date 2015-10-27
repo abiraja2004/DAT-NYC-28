@@ -73,7 +73,7 @@ Tuesday | Thursday
 
 -----
 
-### Class 1: Introduction to Data Science
+### Class 0: Introduction to Data Science
 * Welcome from General Assembly staff
 * Course overview ([slides](slides/01_course_overview.pdf))
 * Introduction to data science ([slides](slides/01_intro_to_data_science.pdf))
@@ -83,7 +83,6 @@ Tuesday | Thursday
 
 **Homework:**
 * Work through GA's friendly [command line tutorial](http://generalassembly.github.io/prework/command-line/#/) using Terminal (Linux/Mac) or Git Bash (Windows), and then browse through this [command line reference](code/02_command_line.md).
-* Watch videos 1 through 8 (21 minutes) of [Introduction to Git and GitHub](https://www.youtube.com/playlist?list=PL5-da3qGB5IBLMp7LtN8Nc3Efd4hJq0kD).
 * If your laptop has any setup issues, please work with us to resolve them by Wednesday.
 
 **Resources:**
