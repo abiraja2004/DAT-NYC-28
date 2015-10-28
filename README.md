@@ -1,5 +1,9 @@
 # DAT-NYC-28
 
+
+
+
+
 Course materials for [General Assembly's Data Science course](https://generalassemb.ly/education/data-science/new-york-city/) in New York, NY (10/27/15 - 1/26/16).
 
 **Instructor:** [Bryan R. Gibson](bryanrgibson.com)
