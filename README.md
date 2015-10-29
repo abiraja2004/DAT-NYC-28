@@ -85,7 +85,7 @@ Tuesday | Thursday
 * Discuss the [course project](project/README.md)
 * Types of data ([slides](slides/01_types_of_data.pdf)) and [public data sources](project/public_data.md)
 * Wrap up: Slack tour, submission forms
-<!--
+
 **Homework:**
 * Work through GA's friendly [command line tutorial](http://generalassembly.github.io/prework/command-line/#/) using Terminal (Linux/Mac) or Git Bash (Windows), and then browse through this [command line reference](code/02_command_line.md).
 * If your laptop has any setup issues, please work with us to resolve them by Wednesday.
@@ -95,7 +95,7 @@ Tuesday | Thursday
 * For some thoughts on what it's like to be a data scientist, read these short posts from [Win-Vector](http://www.win-vector.com/blog/2012/09/on-being-a-data-scientist/) and [Datascope Analytics](http://datascopeanalytics.com/what-we-think/2014/07/31/six-qualities-of-a-great-data-scientist).
 * Quora has a [data science topic FAQ](https://www.quora.com/Data-Science) with lots of interesting Q&A.
 * Keep up with local data-related events through the Data Community DC [event calendar](http://www.datacommunitydc.org/calendar) or [weekly newsletter](http://www.datacommunitydc.org/newsletter).
--->
+
 <!--
 
 -----
