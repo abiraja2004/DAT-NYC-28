@@ -64,16 +64,29 @@ EXERCISE ONE
 '''
 
 # read drinks.csv into a DataFrame called 'drinks'
+drinks = pd.read_table('drinks.csv', sep=',')
+drinks = pd.read_csv('drinks.csv')              # assumes separator is comma
 
 # print the head and the tail
+drinks.head()
+drinks.tail()
 
 # examine the default index, data types, and shape
+drinks.index
+drinks.dtypes
+drinks.shape
 
 # print the 'beer_servings' Series
+drinks['beer_servings']
+drinks.beer_servings
 
 # calculate the average 'beer_servings' for the entire dataset
+drinks.describe()                   # summarize all numeric columns
+drinks.beer_servings.describe()     # summarize only the 'beer_servings' Series
+drinks.beer_servings.mean()         # only calculate the mean
 
 # count the number of occurrences of each 'continent' value and see if it looks correct
+drinks.continent.value_counts()
 
 '''
 Filtering and Sorting
@@ -102,12 +115,16 @@ EXERCISE TWO
 '''
 
 # filter DataFrame to only include European countries
+drinks[drinks.continent=='EU']
 
 # filter DataFrame to only include European countries with wine_servings > 300
+drinks[(drinks.continent=='EU') & (drinks.wine_servings > 300)]
 
 # calculate the average 'beer_servings' for all of Europe
+drinks[drinks.continent=='EU'].beer_servings.mean()
 
 # determine which 10 countries have the highest total_litres_of_pure_alcohol
+drinks.sort('total_litres_of_pure_alcohol').tail(10)
 
 '''
 Renaming, Adding, and Removing Columns
@@ -170,20 +187,30 @@ EXERCISE THREE
 '''
 
 # read ufo.csv into a DataFrame called 'ufo'
+ufo = pd.read_csv('ufo.csv')
 
 # check the shape of the DataFrame
+ufo.shape
 
 # what are the three most common colors reported?
+ufo['Colors Reported'].value_counts()[:3]
+ufo['Colors Reported'].value_counts().head(3)
 
 # rename any columns with spaces so that they don't contain spaces
+ufo.rename(columns={'Colors Reported':'Colors_Reported', 'Shape Reported':'Shape_Reported'}, inplace=True)
+ufo.columns = [col.replace(' ', '_') for col in ufo.columns]
 
 # for reports in VA, what's the most common city?
+ufo[ufo.State=='VA'].City.value_counts()[:1]
 
 # print a DataFrame containing only reports from Arlington, VA
+ufo[(ufo.City=='Arlington') & (ufo.State=='VA')]
 
 # count the number of missing values in each column
+ufo.isnull().sum()
 
 # how many rows remain if you drop all rows with any missing values?
+ufo.dropna().shape[0]
 
 '''
 Split-Apply-Combine
@@ -215,12 +242,16 @@ EXERCISE FOUR
 '''
 
 # for each occupation in 'users', count the number of occurrences
+users.occupation.value_counts()
 
 # for each occupation, calculate the mean age
+users.groupby('occupation').age.mean()
 
 # for each occupation, calculate the minimum and maximum ages
+users.groupby('occupation').age.agg(['min', 'max'])
 
 # for each combination of occupation and gender, calculate the mean age
+users.groupby(['occupation', 'gender']).age.mean()
 
 '''
 Selecting Multiple Columns and Filtering Rows
