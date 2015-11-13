@@ -13,6 +13,7 @@ Let's practice what we've learned using the [Glass Identification dataset](http:
 7. Fit a KNN model on the training set using K=5.
 8. Make predictions on the testing set and calculate testing accuracy.
 9. Write a for loop that computes the testing accuracy for a range of K values.
-10. Plot the K value versus testing accuracy to help you choose an optimal value for K.
-11. Calculate the testing accuracy that could be achieved by always predicting the most frequent class in the testing set. (This is known as the "null accuracy".)
-12. **Bonus:** Explore the data to determine which features look like good predictors, and then redo this exercise using only those features to see if you can achieve a higher testing accuracy!
+10. (optional) Plot the K value versus testing accuracy to help you choose an optimal value for K.
+11. Use GridSearch over the same range of K to confirm your choice.
+12. Calculate the testing accuracy that could be achieved by always predicting the most frequent class in the testing set. (This is known as the "null accuracy".)
+13. **Bonus:** Explore the data to determine which features look like good predictors, and then redo this exercise using only those features to see if you can achieve a higher testing accuracy!
