@@ -10,5 +10,7 @@ This assignment uses data from Kaggle's [Titanic](https://www.kaggle.com/c/titan
 4. Fit a logistic regression model and examine the coefficients to confirm that they make intuitive sense.
 5. Make predictions on the testing set and calculate the accuracy.
 6. Compare to the accuracy achieved by a kNN classifier.
+7. **Bonus:** Create a single plot showing mean Survival rate for the combinations of Pclass and Parch
 7. **Bonus:** Compare your testing accuracy to the "null accuracy", a term we've seen [once before](09_glass_id.md).
 8. **Bonus:** Add Age as a feature, and calculate the testing accuracy. There will be a small issue you'll have to deal with.
+
