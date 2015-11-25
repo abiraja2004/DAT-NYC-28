@@ -6,41 +6,28 @@
 
 Course materials for [General Assembly's Data Science course](https://generalassemb.ly/education/data-science/new-york-city/) in New York, NY (10/27/15 - 1/26/16).
 
-**Instructor:** [Bryan R. Gibson](bryanrgibson.com)
+**Instructor:** [Bryan R. Gibson](http://bryanrgibson.com)
 
-<!--
+
 ### [Course Project](project/README.md)
 
 
+
 Tuesday | Thursday
 --- | ---
-6/1: [Introduction to Data Science](#class-1-introduction-to-data-science) | 6/3: [Command Line and Version Control](#class-2-command-line-and-version-control)
-6/8: [Data Reading and Cleaning](#class-3-data-reading-and-cleaning) | 6/10: [Exploratory Data Analysis](#class-4-exploratory-data-analysis)
-6/15: [Visualization](#class-5-visualization) | 6/17: [Machine Learning](#class-6-machine-learning)
-6/22: [Getting Data](#class-7-getting-data)<br>**Project Discussion Deadline** | 6/24: [K-Nearest Neighbors](#class-8-k-nearest-neighbors)<br>**Project Question and Dataset Due**
-6/29: [Basic Model Evaluation](#class-9-basic-model-evaluation) | 7/1: [Linear Regression](#class-10-linear-regression)
-7/6: [Logistic Regression](#class-11-logistic-regression) | 7/8: [Advanced Model Evaluation](#class-12-advanced-model-evaluation)
-7/13: **[First Project Presentation](#class-13-first-project-presentation)** | 7/15: [Naive Bayes and Text Data](#class-14-naive-bayes-and-text-data)
-7/20: [Natural Language Processing](#class-15-natural-language-processing) | 7/22: [Kaggle Competition](#class-16-kaggle-competition)
-7/27: [Decision Trees](#class-17-decision-trees)<br>**Draft Paper Due** | 7/29: [Ensembling](#class-18-ensembling)
-8/3: [Advanced scikit-learn and](#class-19-advanced-scikit-learn-and-clustering)<br>[Clustering](#class-19-advanced-scikit-learn-and-clustering), **Peer Review Due** | 8/5: [Course Review](#class-20-course-review)
-8/10: **[Final Project Presentation](#classes-21-and-22-final-project-presentation)** | 8/12: **[Final Project Presentation](#classes-21-and-22-final-project-presentation)**
--->
-<!--
-Tuesday | Thursday
---- | ---
-10/27: [Introduction to Data Science] | 10/29: [Command Line and Version Control]
-11/3: [Data Reading and Cleaning] | 11/5: [Exploratory Data Analysis]
-6/15: [Visualization] | 6/17: [Machine Learning]
-6/22: [Getting Data] | 6/24: [K-Nearest Neighbors]
-6/29: [Basic Model Evaluation] | 7/1: [Linear Regression]
-7/6: [Logistic Regression] | 7/8: [Advanced Model Evaluation]
-7/13: **[First Project Presentation]** | 7/15: [Naive Bayes and Text Data]
-7/20: [Natural Language Processing] | 7/22: [Kaggle Competition]
-7/27: [Decision Trees] | 7/29: [Ensemble Techniques]
-8/3: [Advanced scikit-learn] and <br>[Clustering] | 8/5: [Course Review]
-8/10: **[Final Project Presentation]** | 8/12: **[Final Project Presentation]**
--->
+10/27: [Introduction to Data Science](#class-1-introduction-to-data-science) | : 10/29: [Command Line and Version Control](#class-2-command-line-and-version-control)
+11/3: [Exploratory Data Analysis](#class-3-exploratory-data-analysis) | 11/5: [Machine Learning](#class-4-machine-learning) 
+11/10: [K-Nearest Neighbors](#class-5-k-nearest-neighbors)<br>**Project Discussion Deadline** | 11/12: [Basic Model Evaluation](#class-6-basic-model-evaluation)<br>**Project Question and Dataset Due**
+11/17: [Linear Regression](#class-7-linear-regression) | 11/19: [Logistic Regression](#class-8-logistic-regression)
+11/24: [Advanced Model Evaluation](#class-9-advanced-model-evaluation) | 11/26: No Class
+12/1: Naive Bayes and Text Data | 12/3: Natural Language Processing
+12/8: **First Project Presentation** | 12/10: Decision Trees
+12/15: Ensembling | 12/17: Advanced scikit-learn and<br>Clustering, **Peer Review Due**
+12/22: Kaggle Competition<br>**Draft Paper Due** | 12/24: No Class
+12/29: No Class | 12/31: No Class
+1/5: SVMs? | 1/7: Course Review
+1/12: **Final Project Presentation** | 1/14: **Final Project Presentation**
+
 <!--
 ### Before the Course Begins
 * Install [Git](http://git-scm.com/downloads).
@@ -76,6 +63,7 @@ Tuesday | Thursday
 
 ### [Additional resources](#bonus-resources)
 
+
 -----
 
 ### Class 1: Introduction to Data Science
@@ -96,26 +84,20 @@ Tuesday | Thursday
 * Quora has a [data science topic FAQ](https://www.quora.com/Data-Science) with lots of interesting Q&A.
 * Keep up with local data-related events through the Data Community DC [event calendar](http://www.datacommunitydc.org/calendar) or [weekly newsletter](http://www.datacommunitydc.org/newsletter).
 
-<!--
-
 -----
 
 ### Class 2: Command Line and Version Control
-* Command line exercise ([code](code/02_command_line.md))
 * Git and GitHub ([slides](slides/02_git_github.pdf))
-* Intermediate command line
+* Python:
+    * Spyder interface
+    * Review of list comprehensions
+    * Lesson on file reading with airline safety data ([code](code/03_file_reading.py), [data](data/airlines.csv), [article](http://fivethirtyeight.com/features/should-travelers-avoid-flying-airlines-that-have-had-crashes-in-the-past/))
+   
+**Resources:**
+* [PEP 8](https://www.python.org/dev/peps/pep-0008/) is Python's "classic" style guide, and is worth a read if you want to write readable code that is consistent with the rest of the Python community.
 * Wrap up: Course schedule, office hours
 
-**Homework:**
-* Complete the homework exercise listed in the [command line introduction](code/02_command_line.md#homework-exercise). Create a Markdown document that includes your answers and the code you used to arrive at those answers. Add this file to a GitHub repo that you'll use for all of your coursework, and submit a link to your repo using the homework submission form.
-* Review the code from the [beginner](code/00_python_beginner_workshop.py) and [intermediate](code/00_python_intermediate_workshop.py) Python workshops. If you don't feel comfortable with any of the content (up through the "dictionaries" section), you should spend some time this weekend practicing Python. Here are my recommended resources:
-    * If you like learning from a book, [Python for Informatics](http://www.pythonlearn.com/html-270/) has useful chapters on strings, lists, and dictionaries.
-    * If you prefer interactive exercises, try these lessons from [Codecademy](http://www.codecademy.com/en/tracks/python): "Python Lists and Dictionaries" and "A Day at the Supermarket".
-    * If you have more time, try these much longer lessons from [DataQuest](https://dataquest.io/missions): "Find the US city with the lowest crime rate" and "Discover weather patterns in LA".
-    * If you've already mastered these topics and want more of a challenge, try solving the second [Python Challenge](http://www.pythonchallenge.com/) and send me your code in Slack.
-* If there are specific Python topics you want me to cover next week, send me a Slack message.
-
-**Git and Markdown Resources:**
+*Git and Markdown Resources:**
 * [Pro Git](http://git-scm.com/book/en/v2) is an excellent book for learning Git. Read the first two chapters to gain a deeper understanding of version control and basic commands.
 * If you want to practice a lot of Git (and learn many more commands), [Git Immersion](http://gitimmersion.com/) looks promising.
 * If you want to understand how to contribute on GitHub, you first have to understand [forks and pull requests](http://www.dataschool.io/simple-guide-to-forks-in-github-and-git/).
@@ -128,62 +110,20 @@ Tuesday | Thursday
 
 -----
 
-### Class 3: Data Reading and Cleaning
-* Git and GitHub assorted tips ([slides](slides/02_git_github.pdf))
-* Review command line homework ([solution](code/02_command_line.md#homework-solution))
-* Python:
-    * Spyder interface
-    * Review of list comprehensions
-    * Lesson on file reading with airline safety data ([code](code/03_file_reading.py), [data](data/airlines.csv), [article](http://fivethirtyeight.com/features/should-travelers-avoid-flying-airlines-that-have-had-crashes-in-the-past/))
-    * Data cleaning exercise
-    * Walkthrough of homework with Chipotle order data ([code](code/03_python_homework_chipotle.py), [data](data/chipotle.tsv), [article](http://www.nytimes.com/interactive/2015/02/17/upshot/what-do-people-actually-order-at-chipotle.html))
-
-**Homework:**
-* Complete the [homework assignment](code/03_python_homework_chipotle.py) with the [Chipotle data](data/chipotle.tsv), and add a commented Python script to your GitHub repo. If you are unable to complete a part, try writing some pseudocode instead! You have until Monday to complete this assignment.
-
-**Resources:**
-* [PEP 8](https://www.python.org/dev/peps/pep-0008/) is Python's "classic" style guide, and is worth a read if you want to write readable code that is consistent with the rest of the Python community.
-
------
-
-### Class 4: Exploratory Data Analysis
+### Class 3: Exploratory Data Analysis
 * Pandas ([code](code/04_pandas.py)):
     * MovieLens 100k movie ratings ([data](data/u.user), [data dictionary](http://files.grouplens.org/datasets/movielens/ml-100k-README.txt), [website](http://grouplens.org/datasets/movielens/))
     * Alcohol consumption by country ([data](data/drinks.csv), [article](http://fivethirtyeight.com/datalab/dear-mona-followup-where-do-people-drink-the-most-beer-wine-and-spirits/))
     * Reports of UFO sightings ([data](data/ufo.csv), [website](http://www.nuforc.org/webreports.html))
 
-**Homework:**
-* Complete "Exercise Three" from today's Pandas script. **Note:** You do not need to submit this assignment.
-* Read [How Software in Half of NYC Cabs Generates $5.2 Million a Year in Extra Tips](http://iquantny.tumblr.com/post/107245431809/how-software-in-half-of-nyc-cabs-generates-5-2) for an excellent example of exploratory data analysis.
-
 **Resources:**
 * Browsing or searching the Pandas [API Reference](http://pandas.pydata.org/pandas-docs/stable/api.html) is an excellent way to locate a function even if you don't know its exact name.
 * [What I do when I get a new data set as told through tweets](http://simplystatistics.org/2014/06/13/what-i-do-when-i-get-a-new-data-set-as-told-through-tweets/) is a fun (yet enlightening) look at the process of exploratory data analysis.
 
------
-
-### Class 5: Visualization
-* Part 2 of Exploratory Data Analysis with Pandas ([code](code/04_pandas.py))
-* Visualization with Pandas and Matplotlib ([code](code/05_pandas_visualization.py))
-
-**Homework:**
-* Complete the [homework assignment](code/05_pandas_homework_imdb.py) with the [IMDb data](data/imdb_1000.csv), and add a Python script to your GitHub repo. This assignment is due next Monday.
-
-**Pandas Resources:**
-* To learn more Pandas, review this [three-part tutorial](http://www.gregreda.com/2013/10/26/intro-to-pandas-data-structures/), or review these two excellent (but extremely long) notebooks on Pandas: [introduction](http://nbviewer.ipython.org/github/fonnesbeck/Bios8366/blob/master/notebooks/Section2_5-Introduction-to-Pandas.ipynb) and [data wrangling](http://nbviewer.ipython.org/github/fonnesbeck/Bios8366/blob/master/notebooks/Section2_6-Data-Wrangling-with-Pandas.ipynb).
-* If you want to go really deep into Pandas (and NumPy), read the book [Python for Data Analysis](http://shop.oreilly.com/product/0636920023784.do) by the creator of Pandas.
-* Here are examples of different types of [joins in Pandas](http://www.gregreda.com/2013/10/26/working-with-pandas-dataframes/#joining), for when you need to figure out how to merge two DataFrames.
-
-**Visualization Resources:**
-* Watch [Look at Your Data](https://www.youtube.com/watch?v=coNDCIMH8bk) (18 minutes) for an excellent example of why visualization is useful for understanding your data.
-* For more on Pandas plotting, read this [notebook](http://nbviewer.ipython.org/github/fonnesbeck/Bios8366/blob/master/notebooks/Section2_7-Plotting-with-Pandas.ipynb) or the [visualization page](http://pandas.pydata.org/pandas-docs/stable/visualization.html) from the official Pandas documentation.
-* To learn how to customize your plots further, browse through this [notebook on matplotlib](http://nbviewer.ipython.org/github/fonnesbeck/Bios8366/blob/master/notebooks/Section2_4-Matplotlib.ipynb) or this [similar notebook](http://nbviewer.ipython.org/github/jrjohansson/scientific-python-lectures/blob/master/Lecture-4-Matplotlib.ipynb).
-* To explore different types of visualizations and when to use them, [Choosing a Good Chart](http://extremepresentation.typepad.com/files/choosing-a-good-chart-09.pdf) and [The Graphic Continuum](http://www.coolinfographics.com/storage/post-images/The-Graphic-Continuum-POSTER.jpg) are nice one-page references, and the interactive [R Graph Catalog](http://shinyapps.stat.ubc.ca/r-graph-catalog/) has handy filtering capabilities.
-* This [PowerPoint presentation](http://www2.research.att.com/~volinsky/DataMining/Columbia2011/Slides/Topic2-EDAViz.ppt) from Columbia's Data Mining class contains lots of good advice for properly using different types of visualizations.
 
 -----
 
-### Class 6: Machine Learning
+### Class 4: Machine Learning
 * Review Python homework with the Chipotle data ([solution](code/03_python_homework_chipotle.py), [detailed explanation](http://nbviewer.ipython.org/github/Alexjmsherman/DAT7/blob/master/Python%20Homework%20with%20Chipotle%20data%20answers.ipynb))
 * Grouped box plots and grouped histograms ([code](code/05_pandas_visualization.py))
 * Human learning exercise:
@@ -195,9 +135,6 @@ Tuesday | Thursday
     * [Example projects](https://github.com/justmarkham/DAT-project-examples)
     * Project question exercise
 
-**Homework:**
-* Your deadline for discussing your project ideas with an instructor is Monday, and your project question and dataset is due Wednesday.
-
 **Resources:**
 * For a very quick summary of the key points about machine learning, watch [What is machine learning, and how does it work?](https://www.youtube.com/watch?v=elojMnjn4kk) (10 minutes) or read the associated [notebook](http://nbviewer.ipython.org/github/justmarkham/scikit-learn-videos/blob/master/01_machine_learning_intro.ipynb).
 * For a more in-depth introduction to machine learning, read section 2.1 (14 pages) of Hastie and Tibshirani's excellent book, [An Introduction to Statistical Learning](http://www-bcf.usc.edu/~gareth/ISL/). (It's a free PDF download!)
@@ -206,6 +143,7 @@ Tuesday | Thursday
 * [The Emoji Translation Project](https://www.kickstarter.com/projects/fred/the-emoji-translation-project) is a really fun application of machine learning.
 * Look up the [characteristics of your zip code](http://www.esri.com/landing-pages/tapestry/), and then read about the [67 distinct segments](http://doc.arcgis.com/en/esri-demographics/data/tapestry-segmentation.htm) in detail.
 
+<!--
 -----
 
 ### Class 7: Getting Data
@@ -216,14 +154,6 @@ Tuesday | Thursday
     * [IMDb: robots.txt](http://www.imdb.com/robots.txt)
     * [Example web page](data/example.html)
     * [IMDb: The Shawshank Redemption](http://www.imdb.com/title/tt0111161/)
-
-**Homework:**
-* Your project question and dataset is due on Wednesday.
-* **Optional:** Complete the homework exercise listed in the [web scraping code](code/07_web_scraping.py). It will take the place of any one homework you miss, past or future!
-* If you're not using Anaconda, [install the IPython Notebook](http://ipython.org/install.html) using `pip`. (The IPython Notebook comes with Anaconda.)
-* If you're not using Anaconda, [install Seaborn](http://stanford.edu/~mwaskom/software/seaborn/installing.html) using `pip`. If you're using Anaconda, install Seaborn by running `conda install seaborn` at the command line.
-* Watch this brief introduction to [scikit-learn and the IPython Notebook](https://www.youtube.com/watch?v=IsXXlYVBt1M) (15 minutes), and try to follow along with the Notebook introduction on your own computer.
-* Read Kevin's [introduction to reproducibility](http://www.dataschool.io/reproducibility-is-not-just-for-researchers/), read Jeff Leek's [guide to creating a reproducible analysis](https://github.com/jtleek/datasharing), and watch this related [Colbert Report video](http://thecolbertreport.cc.com/videos/dcyvro/austerity-s-spreadsheet-error) (8 minutes).
 
 **API Resources:**
 * [Mashape](https://www.mashape.com/explore) and [Apigee](https://apigee.com/providers) allow you to explore tons of different APIs. Alternatively, a [Python API wrapper](http://www.pythonforbeginners.com/api/list-of-python-apis) is available for many popular APIs.
@@ -238,24 +168,12 @@ Tuesday | Thursday
 * [robotstxt.org](http://www.robotstxt.org/robotstxt.html) has a concise explanation of how to write (and read) the `robots.txt` file.
 * [import.io](https://import.io/) and [Kimono](https://www.kimonolabs.com/) claim to allow you to scrape websites without writing any code.
 * [How a Math Genius Hacked OkCupid to Find True Love](http://www.wired.com/2014/01/how-to-hack-okcupid/all/) and [How Netflix Reverse Engineered Hollywood](http://www.theatlantic.com/technology/archive/2014/01/how-netflix-reverse-engineered-hollywood/282679/?single_page=true) are two fun examples of how web scraping has been used to build interesting datasets.
-
+-->
 -----
 
-### Class 8: K-Nearest Neighbors
-* Optional web scraping homework due ([solution](code/07_web_scraping.py))
-* Reproducibility
-    * Discuss assigned readings: [introduction](http://www.dataschool.io/reproducibility-is-not-just-for-researchers/), [Colbert Report video](http://thecolbertreport.cc.com/videos/dcyvro/austerity-s-spreadsheet-error), [cabs article](http://iquantny.tumblr.com/post/107245431809/how-software-in-half-of-nyc-cabs-generates-5-2), [Tweet](https://twitter.com/jakevdp/status/519563939177197571), [creating a reproducible analysis](https://github.com/jtleek/datasharing)
-    * Examples: [Classic rock](https://github.com/fivethirtyeight/data/tree/master/classic-rock), [student project 1](https://github.com/jwknobloch/DAT4_final_project), [student project 2](https://github.com/justmarkham/DAT4-students/tree/master/Jonathan_Bryan/Project_Files)
-* Machine learning exercise ([article](http://blog.dominodatalab.com/10-interesting-uses-of-data-science/))
-* Brief introduction to the IPython Notebook
+### Class 5: K-Nearest Neighbors
 * K-nearest neighbors and scikit-learn ([notebook](http://nbviewer.ipython.org/github/justmarkham/DAT7/blob/master/notebooks/08_knn_sklearn.ipynb), [notebook code](code/08_knn_sklearn_nb.py))
 * Exploring the bias-variance tradeoff ([notebook](http://nbviewer.ipython.org/github/justmarkham/DAT7/blob/master/notebooks/08_bias_variance.ipynb), [notebook code](code/08_bias_variance_nb.py))
-
-**Homework:**
-* Reading assignment on the [bias-variance tradeoff](homework/09_bias_variance.md)
-* Browse through the scikit-learn documentation for KNN to get a sense of how it's organized: [user guide](http://scikit-learn.org/stable/modules/neighbors.html), [module reference](http://scikit-learn.org/stable/modules/classes.html#module-sklearn.neighbors), [class documentation](http://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html)
-* Work on your project... your first project presentation is in less than three weeks!
-* **Optional:** Read the [Teaching Assistant Evaluation dataset](https://archive.ics.uci.edu/ml/datasets/Teaching+Assistant+Evaluation) into Pandas, create the X and y objects (the response variable is "class attribute"), and go through scikit-learn's 4-step modeling process. (There's no need to submit your code unless you have a question or would like feedback!)
 
 **KNN Resources:**
 * For a recap of the key points about KNN and scikit-learn, watch [Getting started in scikit-learn with the famous iris dataset](https://www.youtube.com/watch?v=hd1W4CyPX58) (15 minutes) and [Training a machine learning model with scikit-learn](https://www.youtube.com/watch?v=RlQuVL6-qe8) (20 minutes).
@@ -273,14 +191,9 @@ Tuesday | Thursday
 
 -----
 
-### Class 9: Basic Model Evaluation
-* Discuss the reading assignment on the [bias-variance tradeoff](homework/09_bias_variance.md)
+### Class 6: Basic Model Evaluation
 * Model evaluation using train/test split ([notebook](http://nbviewer.ipython.org/github/justmarkham/DAT7/blob/master/notebooks/09_model_evaluation.ipynb), [notebook code](code/09_model_evaluation_nb.py))
 * Glass identification exercise using scikit-learn ([instructions](homework/09_glass_id.md), [code](code/09_glass_id.py))
-
-**Homework:**
-* Try to finish the glass identification exercise at home, and then compare your code to the [solution](code/09_glass_id.py). However, there is no need to submit your code unless you have questions or would like feedback.
-* If you're brand new to linear regression, read [What is Linear Regression?](http://blog.yhathq.com/posts/what-is-linear-regression.html) and watch [The Easiest Introduction to Regression Analysis](https://www.youtube.com/watch?v=k_OB1tWX9PM) (14 minutes).
 
 **Resources:**
 * For a recap of much of today's lesson, watch [Comparing machine learning models in scikit-learn](https://www.youtube.com/watch?v=0pP4EwWJgIU) (27 minutes).
@@ -290,13 +203,8 @@ Tuesday | Thursday
 
 -----
 
-### Class 10: Linear Regression
+### Class 7: Linear Regression
 * Linear regression ([notebook](http://nbviewer.ipython.org/github/justmarkham/DAT7/blob/master/notebooks/10_linear_regression.ipynb), [notebook code](code/10_linear_regression_nb.py))
-
-**Homework:**
-* Complete the [homework assignment](homework/10_yelp_reviews.md) with the [Yelp reviews data](data/yelp.csv), and add a Python script (or IPython notebook) to your GitHub repo. This assignment is due on Monday.
-* Watch Rahul Patwari's videos on [probability](https://www.youtube.com/watch?v=o4QmoNfW3bI) (5 minutes) and [odds](https://www.youtube.com/watch?v=GxbXQjX7fC0) (8 minutes) if you're not familiar with either of those terms.
-* Read these excellent articles from BetterExplained: [An Intuitive Guide To Exponential Functions & e](http://betterexplained.com/articles/an-intuitive-guide-to-exponential-functions-e/) and [Demystifying the Natural Logarithm (ln)](http://betterexplained.com/articles/demystifying-the-natural-logarithm-ln/).
 
 **Resources:**
 * Setosa has an excellent [interactive visualization](http://setosa.io/ev/ordinary-least-squares-regression/) of linear regression.
@@ -312,11 +220,10 @@ Tuesday | Thursday
 
 -----
 
-### Class 11: Logistic Regression
-* Yelp reviews homework due ([solution](code/10_yelp_reviews.py))
+### Class 8: Logistic Regression
 * Logistic regression ([notebook](http://nbviewer.ipython.org/github/justmarkham/DAT7/blob/master/notebooks/11_logistic_regression.ipynb), [notebook code](code/11_logistic_regression_nb.py))
 * Exercise with Titanic data ([instructions](homework/11_titanic.md), [solution](code/11_titanic.py))
-* Confusion matrix ([slides](slides/11_confusion_matrix.pdf))
+
 
 **Homework:**
 * If you aren't yet comfortable with all of the confusion matrix terminology, watch Rahul Patwari's videos on [Intuitive sensitivity and specificity](https://www.youtube.com/watch?v=U4_3fditnWg) (9 minutes) and [The tradeoff between sensitivity and specificity](https://www.youtube.com/watch?v=vtYDyGGeQyo) (13 minutes).
@@ -332,18 +239,15 @@ Tuesday | Thursday
 
 -----
 
-### Class 12: Advanced Model Evaluation
+### Class 9: Advanced Model Evaluation
 * Advanced model evaluation ([notebook](http://nbviewer.ipython.org/github/justmarkham/DAT7/blob/master/notebooks/12_advanced_model_evaluation.ipynb), [notebook code](code/12_advanced_model_evaluation_nb.py))
     * Null accuracy, handling missing values
     * Confusion matrix
     * Handling categorical features
+* Confusion matrix ([slides](slides/11_confusion_matrix.pdf))
 * ROC curves and AUC
-    * Discuss the [video assignment](homework/12_roc_auc.md)
     * Exercise: drawing an ROC curve ([slides](slides/12_drawing_roc.pdf))
     * Return to the notebook
-
-**Homework:**
-* Your first project presentation is on Monday! Please submit a link to your project repository (with slides, code, data, and visualizations) before class using the submission form.
 
 **ROC Resources:**
 * Rahul Patwari has a great video on [ROC Curves](https://www.youtube.com/watch?v=21Igj5Pr6u4) (12 minutes).
@@ -357,6 +261,7 @@ Tuesday | Thursday
 * scikit-learn has extensive documentation on [model evaluation](http://scikit-learn.org/stable/modules/model_evaluation.html).
 * Section 3.3.1 of [An Introduction to Statistical Learning](http://www-bcf.usc.edu/~gareth/ISL/) (4 pages) has a great explanation of dummy encoding for categorical features.
 
+<!--
 -----
 
 ### Class 13: First Project Presentation
@@ -530,6 +435,18 @@ Tuesday | Thursday
 -->
 
 ## Bonus Resources
+
+### Pandas Resources
+* To learn more Pandas, review this [three-part tutorial](http://www.gregreda.com/2013/10/26/intro-to-pandas-data-structures/), or review these two excellent (but extremely long) notebooks on Pandas: [introduction](http://nbviewer.ipython.org/github/fonnesbeck/Bios8366/blob/master/notebooks/Section2_5-Introduction-to-Pandas.ipynb) and [data wrangling](http://nbviewer.ipython.org/github/fonnesbeck/Bios8366/blob/master/notebooks/Section2_6-Data-Wrangling-with-Pandas.ipynb).
+* If you want to go really deep into Pandas (and NumPy), read the book [Python for Data Analysis](http://shop.oreilly.com/product/0636920023784.do) by the creator of Pandas.
+* Here are examples of different types of [joins in Pandas](http://www.gregreda.com/2013/10/26/working-with-pandas-dataframes/#joining), for when you need to figure out how to merge two DataFrames.
+
+### Visualization Resources
+* Watch [Look at Your Data](https://www.youtube.com/watch?v=coNDCIMH8bk) (18 minutes) for an excellent example of why visualization is useful for understanding your data.
+* For more on Pandas plotting, read this [notebook](http://nbviewer.ipython.org/github/fonnesbeck/Bios8366/blob/master/notebooks/Section2_7-Plotting-with-Pandas.ipynb) or the [visualization page](http://pandas.pydata.org/pandas-docs/stable/visualization.html) from the official Pandas documentation.
+* To learn how to customize your plots further, browse through this [notebook on matplotlib](http://nbviewer.ipython.org/github/fonnesbeck/Bios8366/blob/master/notebooks/Section2_4-Matplotlib.ipynb) or this [similar notebook](http://nbviewer.ipython.org/github/jrjohansson/scientific-python-lectures/blob/master/Lecture-4-Matplotlib.ipynb).
+* To explore different types of visualizations and when to use them, [Choosing a Good Chart](http://extremepresentation.typepad.com/files/choosing-a-good-chart-09.pdf) and [The Graphic Continuum](http://www.coolinfographics.com/storage/post-images/The-Graphic-Continuum-POSTER.jpg) are nice one-page references, and the interactive [R Graph Catalog](http://shinyapps.stat.ubc.ca/r-graph-catalog/) has handy filtering capabilities.
+* This [PowerPoint presentation](http://www2.research.att.com/~volinsky/DataMining/Columbia2011/Slides/Topic2-EDAViz.ppt) from Columbia's Data Mining class contains lots of good advice for properly using different types of visualizations.
 
 ### Databases and SQL
 * This [GA slide deck](https://github.com/justmarkham/DAT5/blob/master/slides/20_sql.pdf) provides a brief introduction to databases and SQL. The [Python script](https://github.com/justmarkham/DAT5/blob/master/code/20_sql.py) from that lesson demonstrates basic SQL queries, as well as how to connect to a SQLite database from Python and how to query it using Pandas.
