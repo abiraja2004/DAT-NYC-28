@@ -20,7 +20,7 @@ Tuesday | Thursday
 11/10: [K-Nearest Neighbors](#class-5-k-nearest-neighbors)<br>**Project Discussion Deadline** | 11/12: [Basic Model Evaluation](#class-6-basic-model-evaluation)<br>**Project Question and Dataset Due**
 11/17: [Linear Regression](#class-7-linear-regression) | 11/19: [Logistic Regression](#class-8-logistic-regression)
 11/24: [Advanced Model Evaluation](#class-9-advanced-model-evaluation) | 11/26: No Class
-12/1: Naive Bayes and Text Data | 12/3: Natural Language Processing
+12/1: [Naive Bayes and Text Data](#class-10-naive-bayes) | 12/3: Natural Language Processing
 12/8: **First Project Presentation** | 12/10: Decision Trees
 12/15: Ensembling | 12/17: Advanced scikit-learn and<br>Clustering, **Peer Review Due**
 12/22: Kaggle Competition<br>**Draft Paper Due** | 12/24: No Class
@@ -124,7 +124,7 @@ Tuesday | Thursday
 -----
 
 ### Class 4: Machine Learning
-* Review Python homework with the Chipotle data ([solution](code/03_python_homework_chipotle.py), [detailed explanation](http://nbviewer.ipython.org/github/Alexjmsherman/DAT7/blob/master/Python%20Homework%20with%20Chipotle%20data%20answers.ipynb))
+* Review Python homework with the Chipotle data ([solution](code/03_python_homework_chipotle.py)
 * Grouped box plots and grouped histograms ([code](code/05_pandas_visualization.py))
 * Human learning exercise:
     * [Iris dataset](http://archive.ics.uci.edu/ml/datasets/Iris) hosted by the UCI Machine Learning Repository
@@ -172,8 +172,8 @@ Tuesday | Thursday
 -----
 
 ### Class 5: K-Nearest Neighbors
-* K-nearest neighbors and scikit-learn ([notebook](http://nbviewer.ipython.org/github/justmarkham/DAT7/blob/master/notebooks/08_knn_sklearn.ipynb), [notebook code](code/08_knn_sklearn_nb.py))
-* Exploring the bias-variance tradeoff ([notebook](http://nbviewer.ipython.org/github/justmarkham/DAT7/blob/master/notebooks/08_bias_variance.ipynb), [notebook code](code/08_bias_variance_nb.py))
+* K-nearest neighbors and scikit-learn ([notebook](notebooks/08_knn_sklearn.ipynb), [notebook code](code/08_knn_sklearn_nb.py))
+* Exploring the bias-variance tradeoff ([notebook](notebooks/08_bias_variance.ipynb), [notebook code](code/08_bias_variance_nb.py))
 
 **KNN Resources:**
 * For a recap of the key points about KNN and scikit-learn, watch [Getting started in scikit-learn with the famous iris dataset](https://www.youtube.com/watch?v=hd1W4CyPX58) (15 minutes) and [Training a machine learning model with scikit-learn](https://www.youtube.com/watch?v=RlQuVL6-qe8) (20 minutes).
@@ -192,7 +192,7 @@ Tuesday | Thursday
 -----
 
 ### Class 6: Basic Model Evaluation
-* Model evaluation using train/test split ([notebook](http://nbviewer.ipython.org/github/justmarkham/DAT7/blob/master/notebooks/09_model_evaluation.ipynb), [notebook code](code/09_model_evaluation_nb.py))
+* Model evaluation using train/test split ([notebook](notebooks/09_model_evaluation.ipynb), [notebook code](code/09_model_evaluation_nb.py))
 * Glass identification exercise using scikit-learn ([instructions](homework/09_glass_id.md), [code](code/09_glass_id.py))
 
 **Resources:**
@@ -204,7 +204,7 @@ Tuesday | Thursday
 -----
 
 ### Class 7: Linear Regression
-* Linear regression ([notebook](http://nbviewer.ipython.org/github/justmarkham/DAT7/blob/master/notebooks/10_linear_regression.ipynb), [notebook code](code/10_linear_regression_nb.py))
+* Linear regression ([notebook](notebooks/10_linear_regression.ipynb), [notebook code](code/10_linear_regression_nb.py))
 
 **Resources:**
 * Setosa has an excellent [interactive visualization](http://setosa.io/ev/ordinary-least-squares-regression/) of linear regression.
@@ -221,13 +221,8 @@ Tuesday | Thursday
 -----
 
 ### Class 8: Logistic Regression
-* Logistic regression ([notebook](http://nbviewer.ipython.org/github/justmarkham/DAT7/blob/master/notebooks/11_logistic_regression.ipynb), [notebook code](code/11_logistic_regression_nb.py))
+* Logistic regression ([notebook](notebooks/11_logistic_regression.ipynb), [notebook code](code/11_logistic_regression_nb.py))
 * Exercise with Titanic data ([instructions](homework/11_titanic.md), [solution](code/11_titanic.py))
-
-
-**Homework:**
-* If you aren't yet comfortable with all of the confusion matrix terminology, watch Rahul Patwari's videos on [Intuitive sensitivity and specificity](https://www.youtube.com/watch?v=U4_3fditnWg) (9 minutes) and [The tradeoff between sensitivity and specificity](https://www.youtube.com/watch?v=vtYDyGGeQyo) (13 minutes).
-* Video assignment on [ROC curves and AUC](homework/12_roc_auc.md)
 
 **Resources:**
 * To go deeper into logistic regression, read the first three sections of Chapter 4 of [An Introduction to Statistical Learning](http://www-bcf.usc.edu/~gareth/ISL/), or watch the [first three videos](http://www.dataschool.io/15-hours-of-expert-machine-learning-videos/) (30 minutes) from that chapter.
@@ -240,7 +235,7 @@ Tuesday | Thursday
 -----
 
 ### Class 9: Advanced Model Evaluation
-* Advanced model evaluation ([notebook](http://nbviewer.ipython.org/github/justmarkham/DAT7/blob/master/notebooks/12_advanced_model_evaluation.ipynb), [notebook code](code/12_advanced_model_evaluation_nb.py))
+* Advanced model evaluation ([notebook](notebooks/12_advanced_model_evaluation.ipynb), [notebook code](code/12_advanced_model_evaluation_nb.py))
     * Null accuracy, handling missing values
     * Confusion matrix
     * Handling categorical features
@@ -255,7 +250,7 @@ Tuesday | Thursday
 * These [lesson notes](http://ebp.uga.edu/courses/Chapter%204%20-%20Diagnosis%20I/8%20-%20ROC%20curves.html) from a course at the University of Georgia include some simple, real-world examples of the use of ROC curves.
 * ROC curves can be used across a wide variety of applications, such as [comparing different feature sets](http://research.microsoft.com/pubs/205472/aisec10-leontjeva.pdf) for detecting fraudulent Skype users, and [comparing different classifiers](http://www.cse.ust.hk/nevinZhangGroup/readings/yi/Bradley_PR97.pdf) on a number of popular datasets.
 * This blog post about [Amazon Machine Learning](https://aws.amazon.com/blogs/aws/amazon-machine-learning-make-data-driven-decisions-at-scale/) contains a neat [graphic](https://media.amazonwebservices.com/blog/2015/ml_adjust_model_1.png) showing how classification threshold affects different evaluation metrics.
-* This short notebook demonstrates how ROC curves and AUC are only sensitive to the [rank ordering of predicted probabilities](http://nbviewer.ipython.org/github/justmarkham/DAT7/blob/master/notebooks/12_roc_auc_rank_ordering.ipynb).
+* This short notebook demonstrates how ROC curves and AUC are only sensitive to the [rank ordering of predicted probabilities](notebooks/12_roc_auc_rank_ordering.ipynb).
 
 **Other Resources:**
 * scikit-learn has extensive documentation on [model evaluation](http://scikit-learn.org/stable/modules/model_evaluation.html).
@@ -272,23 +267,17 @@ Tuesday | Thursday
 * Read these [Introduction to Probability](https://docs.google.com/presentation/d/1cM2dVbJgTWMkHoVNmYlB9df6P2H8BrjaqAcZTaLe9dA/edit#slide=id.gfc3caad2_00) slides, or skim section 2.1 of the [OpenIntro Statistics textbook](https://www.openintro.org/stat/textbook.php) (12 pages). Pay specific attention to the following terms: probability, mutually exclusive, sample space, independent.
 * **Optional:** Try to gain an understanding of conditional probability from this [visualization](http://setosa.io/conditional/).
 * **Optional:** For an intuitive introduction to Bayes' theorem, read these posts on [wealth and happiness](http://www.quora.com/What-is-an-intuitive-explanation-of-Bayes-Rule/answer/Michael-Hochster), [ducks](https://planspacedotorg.wordpress.com/2014/02/23/bayes-rule-for-ducks/), or [legos](http://www.countbayesie.com/blog/2015/2/18/bayes-theorem-with-lego).
-
+-->
 -----
 
 ### Class 14: Naive Bayes and Text Data
 * Conditional probability and Bayes' theorem
     * [Slides](slides/14_bayes_theorem.pdf) (adapted from [Visualizing Bayes' theorem](http://oscarbonilla.com/2009/05/visualizing-bayes-theorem/))
-    * Applying Bayes' theorem to iris classification ([notebook](http://nbviewer.ipython.org/github/justmarkham/DAT7/blob/master/notebooks/14_bayes_theorem_iris.ipynb))
+    * Applying Bayes' theorem to iris classification ([notebook](notebooks/14_bayes_theorem_iris.ipynb))
 * Naive Bayes classification
     * [Slides](slides/14_naive_bayes.pdf)
-    * Example with spam filtering ([notebook](http://nbviewer.ipython.org/github/justmarkham/DAT7/blob/master/notebooks/14_naive_bayes_spam.ipynb))
-    * Discuss the reading assignment on [spam filtering](homework/14_spam_filtering.md)
+    * Example with spam filtering ([notebook](notebooks/14_naive_bayes_spam.ipynb))
     * Classifying [SMS messages](https://archive.ics.uci.edu/ml/datasets/SMS+Spam+Collection) ([code](code/14_naive_bayes.py))
-
-**Homework:**
-* Confirm that you have [TextBlob](https://textblob.readthedocs.org/) installed by running `import textblob` from within your preferred Python environment. If it's not installed, run `pip install textblob` at the command line (not from within Python).
-* Complete the [Yelp review text homework](homework/14_yelp_text.md), and add a Python script (or IPython notebook) to your GitHub repo. This assignment is due on Monday.
-* There is a video/reading assignment on [cross-validation](homework/15_cross_validation.md), for those of you that have not already watched the video or would prefer a reading instead.
 
 **Resources:**
 * For more on conditional probability, read these [slides](https://docs.google.com/presentation/d/1psUIyig6OxHQngGEHr3TMkCvhdLInnKnclQoNUr4G4U/edit#slide=id.gfc69f484_00), or read section 2.2 of the [OpenIntro Statistics textbook](https://www.openintro.org/stat/textbook.php) (14 pages).
@@ -298,7 +287,7 @@ Tuesday | Thursday
 * These [slides](http://www.umiacs.umd.edu/~jbg/teaching/DATA_DIGGING/lecture_05.pdf) from the University of Maryland provide more mathematical details on both logistic regression and Naive Bayes, and also explain how Naive Bayes is actually a "special case" of logistic regression.
 * Andrew Ng has a [paper](https://cs.stanford.edu/people/ang//papers/nips01-discriminativegenerative.pdf) comparing the performance of logistic regression and Naive Bayes across a variety of datasets.
 * If you enjoyed Paul Graham's article, you can read [his follow-up article](http://www.paulgraham.com/better.html) on how he improved his spam filter and this [related paper](http://www.merl.com/publications/docs/TR2004-091.pdf) about state-of-the-art spam filtering in 2004.
-
+<!--
 -----
 
 ### Class 15: Natural Language Processing
