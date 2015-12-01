@@ -20,7 +20,7 @@ Tuesday | Thursday
 11/10: [K-Nearest Neighbors](#class-5-k-nearest-neighbors)<br>**Project Discussion Deadline** | 11/12: [Basic Model Evaluation](#class-6-basic-model-evaluation)<br>**Project Question and Dataset Due**
 11/17: [Linear Regression](#class-7-linear-regression) | 11/19: [Logistic Regression](#class-8-logistic-regression)
 11/24: [Advanced Model Evaluation](#class-9-advanced-model-evaluation) | 11/26: No Class
-12/1: [Naive Bayes and Text Data](#class-10-naive-bayes) | 12/3: Natural Language Processing
+12/1: [Naive Bayes and Text Data](#class-10-naive-bayes-and-text-data) | 12/3: Natural Language Processing
 12/8: **First Project Presentation** | 12/10: Decision Trees
 12/15: Ensembling | 12/17: Advanced scikit-learn and<br>Clustering, **Peer Review Due**
 12/22: Kaggle Competition<br>**Draft Paper Due** | 12/24: No Class
