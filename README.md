@@ -270,7 +270,7 @@ Tuesday | Thursday
 -->
 -----
 
-### Class 14: Naive Bayes and Text Data
+### Class 9: Naive Bayes and Text Data
 * Conditional probability and Bayes' theorem
     * [Slides](slides/14_bayes_theorem.pdf) (adapted from [Visualizing Bayes' theorem](http://oscarbonilla.com/2009/05/visualizing-bayes-theorem/))
     * Applying Bayes' theorem to iris classification ([notebook](notebooks/14_bayes_theorem_iris.ipynb))
