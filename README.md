@@ -270,7 +270,7 @@ Tuesday | Thursday
 -->
 -----
 
-### Class 9: Naive Bayes and Text Data
+### Class 10: Naive Bayes and Text Data
 * Conditional probability and Bayes' theorem
     * [Slides](slides/14_bayes_theorem.pdf) (adapted from [Visualizing Bayes' theorem](http://oscarbonilla.com/2009/05/visualizing-bayes-theorem/))
     * Applying Bayes' theorem to iris classification ([notebook](notebooks/14_bayes_theorem_iris.ipynb))
@@ -287,6 +287,7 @@ Tuesday | Thursday
 * These [slides](http://www.umiacs.umd.edu/~jbg/teaching/DATA_DIGGING/lecture_05.pdf) from the University of Maryland provide more mathematical details on both logistic regression and Naive Bayes, and also explain how Naive Bayes is actually a "special case" of logistic regression.
 * Andrew Ng has a [paper](https://cs.stanford.edu/people/ang//papers/nips01-discriminativegenerative.pdf) comparing the performance of logistic regression and Naive Bayes across a variety of datasets.
 * If you enjoyed Paul Graham's article, you can read [his follow-up article](http://www.paulgraham.com/better.html) on how he improved his spam filter and this [related paper](http://www.merl.com/publications/docs/TR2004-091.pdf) about state-of-the-art spam filtering in 2004.
+
 <!--
 -----
 
