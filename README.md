@@ -15,18 +15,20 @@ Course materials for [General Assembly's Data Science course](https://generalass
 
 Tuesday | Thursday
 --- | ---
-10/27: [Introduction to Data Science](#class-1-introduction-to-data-science) | : 10/29: [Command Line and Version Control](#class-2-command-line-and-version-control)
+10/27: [Introduction to Data Science](#class-1-introduction-to-data-science) | 10/29: [Command Line and Version Control](#class-2-command-line-and-version-control)
 11/3: [Exploratory Data Analysis](#class-3-exploratory-data-analysis) | 11/5: [Machine Learning](#class-4-machine-learning) 
 11/10: [K-Nearest Neighbors](#class-5-k-nearest-neighbors)<br>**Project Discussion Deadline** | 11/12: [Basic Model Evaluation](#class-6-basic-model-evaluation)<br>**Project Question and Dataset Due**
 11/17: [Linear Regression](#class-7-linear-regression) | 11/19: [Logistic Regression](#class-8-logistic-regression)
 11/24: [Advanced Model Evaluation](#class-9-advanced-model-evaluation) | 11/26: No Class
-12/1: [Naive Bayes and Text Data](#class-10-naive-bayes-and-text-data) | 12/3: Natural Language Processing
-12/8: **First Project Presentation** | 12/10: Decision Trees
-12/15: Ensembling | 12/17: Advanced scikit-learn and<br>Clustering, **Peer Review Due**
-12/22: Kaggle Competition<br>**Draft Paper Due** | 12/24: No Class
+12/1: [Naive Bayes and Text Data](#class-10-naive-bayes-and-text-data) | 12/3: [Natural Language Processing](#class-11-natural-language-processing)
+12/8: **First Project Presentation** | 12/10: [Decision Trees](#class-13-decision-trees)
+12/15: Kaggle Competition | 12/17: Ensembles
+12/22: Advanced scikit-learn and<br>Clustering, **Peer Review Due** | 12/24: No Class
 12/29: No Class | 12/31: No Class
-1/5: SVMs? | 1/7: Course Review
-1/12: **Final Project Presentation** | 1/14: **Final Project Presentation**
+1/5: **Draft Paper Due** | 1/7: Timeseries
+1/12: SVMs | 1/14: From Question to API 
+1/19: Hadoop and Spark | 1/21: Course Review
+1/24: **Final Project Presentation** | 1/26: **Final Project Presentation**
 
 <!--
 ### Before the Course Begins
@@ -239,6 +241,7 @@ Tuesday | Thursday
     * Null accuracy, handling missing values
     * Confusion matrix
     * Handling categorical features
+
 * Confusion matrix ([slides](slides/11_confusion_matrix.pdf))
 * ROC curves and AUC
     * Exercise: drawing an ROC curve ([slides](slides/12_drawing_roc.pdf))
@@ -252,22 +255,15 @@ Tuesday | Thursday
 * This blog post about [Amazon Machine Learning](https://aws.amazon.com/blogs/aws/amazon-machine-learning-make-data-driven-decisions-at-scale/) contains a neat [graphic](https://media.amazonwebservices.com/blog/2015/ml_adjust_model_1.png) showing how classification threshold affects different evaluation metrics.
 * This short notebook demonstrates how ROC curves and AUC are only sensitive to the [rank ordering of predicted probabilities](notebooks/12_roc_auc_rank_ordering.ipynb).
 
+**Cross-Validation Resources:**
+* For more on cross-validation, read section 5.1 of [An Introduction to Statistical Learning](http://www-bcf.usc.edu/~gareth/ISL/) (11 pages) or watch the related videos: [K-fold and leave-one-out cross-validation](https://www.youtube.com/watch?v=nZAM5OXrktY) (14 minutes), [cross-validation the right and wrong ways](https://www.youtube.com/watch?v=S06JpVoNaA0) (10 minutes).
+* [Accurately Measuring Model Prediction Error](http://scott.fortmann-roe.com/docs/MeasuringError.html) compares adjusted R-squared, AIC and BIC, train/test split, and cross-validation.
+* If you want to understand the different variations of cross-validation, this [paper](http://www.jcheminf.com/content/pdf/1758-2946-6-10.pdf) examines and compares them in detail.
+
 **Other Resources:**
 * scikit-learn has extensive documentation on [model evaluation](http://scikit-learn.org/stable/modules/model_evaluation.html).
 * Section 3.3.1 of [An Introduction to Statistical Learning](http://www-bcf.usc.edu/~gareth/ISL/) (4 pages) has a great explanation of dummy encoding for categorical features.
 
-<!--
------
-
-### Class 13: First Project Presentation
-* Project presentations!
-
-**Homework:**
-* Reading assignment on [spam filtering](homework/14_spam_filtering.md)
-* Read these [Introduction to Probability](https://docs.google.com/presentation/d/1cM2dVbJgTWMkHoVNmYlB9df6P2H8BrjaqAcZTaLe9dA/edit#slide=id.gfc3caad2_00) slides, or skim section 2.1 of the [OpenIntro Statistics textbook](https://www.openintro.org/stat/textbook.php) (12 pages). Pay specific attention to the following terms: probability, mutually exclusive, sample space, independent.
-* **Optional:** Try to gain an understanding of conditional probability from this [visualization](http://setosa.io/conditional/).
-* **Optional:** For an intuitive introduction to Bayes' theorem, read these posts on [wealth and happiness](http://www.quora.com/What-is-an-intuitive-explanation-of-Bayes-Rule/answer/Michael-Hochster), [ducks](https://planspacedotorg.wordpress.com/2014/02/23/bayes-rule-for-ducks/), or [legos](http://www.countbayesie.com/blog/2015/2/18/bayes-theorem-with-lego).
--->
 -----
 
 ### Class 10: Naive Bayes and Text Data
@@ -288,22 +284,10 @@ Tuesday | Thursday
 * Andrew Ng has a [paper](https://cs.stanford.edu/people/ang//papers/nips01-discriminativegenerative.pdf) comparing the performance of logistic regression and Naive Bayes across a variety of datasets.
 * If you enjoyed Paul Graham's article, you can read [his follow-up article](http://www.paulgraham.com/better.html) on how he improved his spam filter and this [related paper](http://www.merl.com/publications/docs/TR2004-091.pdf) about state-of-the-art spam filtering in 2004.
 
-<!--
 -----
 
-### Class 15: Natural Language Processing
-* Yelp review text homework due ([solution](code/14_yelp_text.py))
-* Natural language processing ([notebook](http://nbviewer.ipython.org/github/justmarkham/DAT7/blob/master/notebooks/15_natural_language_processing.ipynb), [notebook code](code/15_natural_language_processing_nb.py))
-* Cross-validation
-    * Discuss the [video/reading assignment](homework/15_cross_validation.md) ([notebook](http://nbviewer.ipython.org/github/justmarkham/DAT7/blob/master/notebooks/15_cross_validation.ipynb), [notebook code](code/15_cross_validation_nb.py))
-* Introduction to our Kaggle competition
-    * Create a [Kaggle](https://www.kaggle.com/) account, join the [competition](https://inclass.kaggle.com/c/dat7-stack-overflow) using the invitation link, download the sample submission, and then submit the sample submission (which will require SMS account verification).
-
-**Homework:**
-* Download the competition files, move them to the `DAT7/data` directory, and make sure you can open the CSV files using Pandas. If you have any problems opening the files, you probably need to turn off real-time virus scanning (especially Microsoft Security Essentials).
-* Come up with some theories about which features might be relevant to predicting the response, and then explore the data to see if those theories appear to be true.
-* **Optional:** Think about some features that might be worth creating from the data, and then figure out how to actually create those features.
-* **Optional:** Watch my [project presentation video](https://www.youtube.com/watch?v=HGr1yQV3Um0) (16 minutes) for a tour of the end-to-end machine learning process for a Kaggle competition, including the creation of new features. (Or, just read through the [slides](https://speakerdeck.com/justmarkham/allstate-purchase-prediction-challenge-on-kaggle).)
+### Class 11: Natural Language Processing
+* Natural language processing ([notebook](notebooks/15_natural_language_processing.ipynb), [notebook code](code/15_natural_language_processing_nb.py))
 
 **NLP Resources:**
 * If you want to learn a lot more NLP, check out the excellent [video lectures](https://class.coursera.org/nlp/lecture) and [slides](http://web.stanford.edu/~jurafsky/NLPCourseraSlides.html) from this [Coursera course](https://www.coursera.org/course/nlp) (which is no longer being offered).
@@ -314,12 +298,35 @@ Tuesday | Thursday
 * If you want to get serious about NLP, [Stanford CoreNLP](http://nlp.stanford.edu/software/corenlp.shtml) is a suite of tools (written in Java) that is highly regarded.
 * [DC Natural Language Processing](http://www.meetup.com/DC-NLP/) is an active Meetup group in our local area.
 
-**Cross-Validation Resources:**
-* For more on cross-validation, read section 5.1 of [An Introduction to Statistical Learning](http://www-bcf.usc.edu/~gareth/ISL/) (11 pages) or watch the related videos: [K-fold and leave-one-out cross-validation](https://www.youtube.com/watch?v=nZAM5OXrktY) (14 minutes), [cross-validation the right and wrong ways](https://www.youtube.com/watch?v=S06JpVoNaA0) (10 minutes).
-* [Accurately Measuring Model Prediction Error](http://scott.fortmann-roe.com/docs/MeasuringError.html) compares adjusted R-squared, AIC and BIC, train/test split, and cross-validation.
-* If you want to understand the different variations of cross-validation, this [paper](http://www.jcheminf.com/content/pdf/1758-2946-6-10.pdf) examines and compares them in detail.
+-----
+
+### Class 12: First Project Presentation
+* Project presentations!
+-----
+
+### Class 13: Decision Trees
+* Decision trees ([notebook](notebooks/17_decision_trees.ipynb), [notebook code](code/17_decision_trees_nb.py))
+
+**Resources:**
+* scikit-learn's documentation on [decision trees](http://scikit-learn.org/stable/modules/tree.html) includes a nice overview of trees as well as tips for proper usage.
+* For a more thorough introduction to decision trees, read section 4.3 (23 pages) of [Introduction to Data Mining](http://www-users.cs.umn.edu/~kumar/dmbook/index.php). (Chapter 4 is available as a free download.)
+* This paper, [The Science of Singing Along](http://www.doc.gold.ac.uk/~mas03dm/papers/PawleyMullensiefen_Singalong_2012.pdf), contains a neat regression tree for predicting the percentage of an audience at a music venue that will sing along to a pop song.
+* If you want to go deep into the different decision tree algorithms, this slide deck contains [A Brief History of Classification and Regression Trees](https://drive.google.com/file/d/0B-BKohKl-jUYQ3RpMEF0OGRUU3RHVGpHY203NFd3Z19Nc1ZF/view).
+
+**Installing GraphViz (optional):**
+* Mac: [Download and install PKG file](http://www.graphviz.org/Download_macos.php)
+* Windows: [Download and install MSI file](http://www.graphviz.org/Download_windows.php), and then add GraphViz to your path:
+    * Go to Control Panel, System, Advanced System Settings, Environment Variables
+    * Under system variables, edit "Path" to include the path to the "bin" folder, such as: `C:\Program Files (x86)\Graphviz2.38\bin`
 
 -----
+
+<!--
+-----
+* Cross-validation
+    * Discuss the [video/reading assignment](homework/15_cross_validation.md) ([notebook](http://nbviewer.ipython.org/github/justmarkham/DAT7/blob/master/notebooks/15_cross_validation.ipynb), [notebook code](code/15_cross_validation_nb.py))
+* Introduction to our Kaggle competition
+    * Create a [Kaggle](https://www.kaggle.com/) account, join the [competition](https://inclass.kaggle.com/c/dat7-stack-overflow) using the invitation link, download the sample submission, and then submit the sample submission (which will require SMS account verification).
 
 ### Class 16: Kaggle Competition
 * Overview of how Kaggle works ([slides](slides/16_kaggle.pdf))
@@ -340,28 +347,12 @@ Tuesday | Thursday
 * These examples may help you to better understand the process of feature engineering: predicting the number of [passengers at a train station](https://medium.com/@chris_bour/french-largest-data-science-challenge-ever-organized-shows-the-unreasonable-effectiveness-of-open-8399705a20ef), identifying [fraudulent users of an online store](https://docs.google.com/presentation/d/1UdI5NY-mlHyseiRVbpTLyvbrHxY8RciHp5Vc-ZLrwmU/edit#slide=id.p), identifying [bots in an online auction](https://www.kaggle.com/c/facebook-recruiting-iv-human-or-bot/forums/t/14628/share-your-secret-sauce), predicting who will [subscribe to the next season of an orchestra](http://blog.kaggle.com/2015/01/05/kaggle-inclass-stanfords-getting-a-handel-on-data-science-winners-report/), and evaluating the [quality of e-commerce search engine results](http://blog.kaggle.com/2015/07/22/crowdflower-winners-interview-3rd-place-team-quartet/).
 
 -----
-
-### Class 17: Decision Trees
-* Decision trees ([notebook](http://nbviewer.ipython.org/github/justmarkham/DAT7/blob/master/notebooks/17_decision_trees.ipynb), [notebook code](code/17_decision_trees_nb.py))
-
 **Homework:**
 * You will be assigned to review the project drafts of two of your peers. You have until next Monday to provide them with feedback, according to the [peer review guidelines](project/peer_review.md).
 * Read the "Wisdom of the crowds" section from MLWave's post on [Human Ensemble Learning](http://mlwave.com/human-ensemble-learning/).
 * **Optional:** Read the abstract from [Do We Need Hundreds of Classifiers to Solve Real World Classification Problems?](http://jmlr.csail.mit.edu/papers/volume15/delgado14a/delgado14a.pdf), as well as Kaggle CTO Ben Hamner's [comment](https://news.ycombinator.com/item?id=8719723) about the paper, paying attention to the mentions of "Random Forests".
 
-**Resources:**
-* scikit-learn's documentation on [decision trees](http://scikit-learn.org/stable/modules/tree.html) includes a nice overview of trees as well as tips for proper usage.
-* For a more thorough introduction to decision trees, read section 4.3 (23 pages) of [Introduction to Data Mining](http://www-users.cs.umn.edu/~kumar/dmbook/index.php). (Chapter 4 is available as a free download.)
-* This paper, [The Science of Singing Along](http://www.doc.gold.ac.uk/~mas03dm/papers/PawleyMullensiefen_Singalong_2012.pdf), contains a neat regression tree for predicting the percentage of an audience at a music venue that will sing along to a pop song.
-* If you want to go deep into the different decision tree algorithms, this slide deck contains [A Brief History of Classification and Regression Trees](https://drive.google.com/file/d/0B-BKohKl-jUYQ3RpMEF0OGRUU3RHVGpHY203NFd3Z19Nc1ZF/view).
 
-**Installing GraphViz (optional):**
-* Mac: [Download and install PKG file](http://www.graphviz.org/Download_macos.php)
-* Windows: [Download and install MSI file](http://www.graphviz.org/Download_windows.php), and then add GraphViz to your path:
-    * Go to Control Panel, System, Advanced System Settings, Environment Variables
-    * Under system variables, edit "Path" to include the path to the "bin" folder, such as: `C:\Program Files (x86)\Graphviz2.38\bin`
-
------
 
 ### Class 18: Ensembling
 * Finish decision trees lesson
