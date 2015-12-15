@@ -25,7 +25,7 @@ Tuesday | Thursday
 12/15: Kaggle Competition | 12/17: Ensembles
 12/22: Advanced scikit-learn and<br>Clustering, **Peer Review Due** | 12/24: No Class
 12/29: No Class | 12/31: No Class
-1/5: SVMs**Draft Paper Due** | 1/7: Timeseries
+1/5: SVMs, **Draft Paper Due** | 1/7: Timeseries
 1/12: From Question to API | 1/14: Hadoop and Spark 
 1/19: Course Review | 1/21: **Final Project Presentation**
 1/26: **Final Project Presentation** |
