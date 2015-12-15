@@ -23,10 +23,10 @@ Tuesday | Thursday
 12/1: [Naive Bayes and Text Data](#class-10-naive-bayes-and-text-data) | 12/3: [Natural Language Processing](#class-11-natural-language-processing)
 12/8: **First Project Presentation** | 12/10: [Decision Trees](#class-13-decision-trees)
 12/15: Kaggle Competition | 12/17: Ensembles
-12/22: Advanced scikit-learn and<br>Clustering, **Peer Review Due** | 12/24: No Class
+12/22: Advanced scikit-learn and<br>Clustering | 12/24: No Class
 12/29: No Class | 12/31: No Class
 1/5: SVMs, **Draft Paper Due** | 1/7: Timeseries
-1/12: From Question to API | 1/14: Hadoop and Spark 
+1/12: From Question to API, **Peer Review Due** | 1/14: Hadoop and Spark 
 1/19: Course Review | 1/21: **Final Project Presentation**
 1/26: **Final Project Presentation** |
 
