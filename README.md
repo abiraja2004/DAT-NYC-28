@@ -28,7 +28,7 @@ Tuesday | Thursday
 1/5: SVMs**Draft Paper Due** | 1/7: Timeseries
 1/12: From Question to API | 1/14: Hadoop and Spark 
 1/19: Course Review | 1/21: **Final Project Presentation**
-1/26: **Final Project Presentation**
+1/26: **Final Project Presentation** |
 
 <!--
 ### Before the Course Begins
