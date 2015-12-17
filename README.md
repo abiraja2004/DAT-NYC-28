@@ -334,6 +334,7 @@ Tuesday | Thursday
 * Overview of how Kaggle works ([slides](slides/16_kaggle.pdf))
 * Kaggle In-Class competition: [Predict whether a Stack Overflow question will be closed](https://inclass.kaggle.com/c/dat-nyc-28-stack-overflow)
     * [Explanations of log loss](http://www.quora.com/What-is-an-intuitive-explanation-for-the-log-loss-function)
+**Homework:** Make at least 2 submissions!
 
 **Resources:**
 * For a great overview of the diversity of problems tackled by Kaggle competitions, watch [Kaggle Transforms Data Science Into Competitive Sport](https://www.youtube.com/watch?v=8w4UY66GKcM) (28 minutes) by Jeremy Howard (past president of Kaggle).
