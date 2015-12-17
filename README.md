@@ -22,7 +22,7 @@ Tuesday | Thursday
 11/24: [Advanced Model Evaluation](#class-9-advanced-model-evaluation) | 11/26: No Class
 12/1: [Naive Bayes and Text Data](#class-10-naive-bayes-and-text-data) | 12/3: [Natural Language Processing](#class-11-natural-language-processing)
 12/8: **First Project Presentation** | 12/10: [Decision Trees](#class-13-decision-trees)
-12/15: Kaggle Competition | 12/17: Ensembles
+12/15: [Kaggle Competition](#class-14-kaggle-competition) | 12/17: [Ensembles](#class-15-ensembles)
 12/22: Advanced scikit-learn and<br>Clustering | 12/24: No Class
 12/29: No Class | 12/31: No Class
 1/5: SVMs, **Draft Paper Due** | 1/7: Timeseries
@@ -302,6 +302,7 @@ Tuesday | Thursday
 
 ### Class 12: First Project Presentation
 * Project presentations!
+
 -----
 
 ### Class 13: Decision Trees
@@ -327,17 +328,12 @@ Tuesday | Thursday
     * Discuss the [video/reading assignment](homework/15_cross_validation.md) ([notebook](http://nbviewer.ipython.org/github/justmarkham/DAT7/blob/master/notebooks/15_cross_validation.ipynb), [notebook code](code/15_cross_validation_nb.py))
 * Introduction to our Kaggle competition
     * Create a [Kaggle](https://www.kaggle.com/) account, join the [competition](https://inclass.kaggle.com/c/dat7-stack-overflow) using the invitation link, download the sample submission, and then submit the sample submission (which will require SMS account verification).
+-->
 
-### Class 16: Kaggle Competition
+### Class 14: Kaggle Competition
 * Overview of how Kaggle works ([slides](slides/16_kaggle.pdf))
-* Kaggle In-Class competition: [Predict whether a Stack Overflow question will be closed](https://inclass.kaggle.com/c/dat7-stack-overflow)
-    * [Complete code file](code/16_kaggle.py)
-    * [Minimal code file](code/16_kaggle_minimal.py): excludes all exploratory code
+* Kaggle In-Class competition: [Predict whether a Stack Overflow question will be closed](https://inclass.kaggle.com/c/dat-nyc-28-stack-overflow)
     * [Explanations of log loss](http://www.quora.com/What-is-an-intuitive-explanation-for-the-log-loss-function)
-
-**Homework:**
-* Your draft paper is due on Monday! Please submit a link to your project repository (with paper, code, data, and visualizations) before class using the submission form.
-* **Optional:** Keep working on this competition! You can make up to 5 submissions per day, and the competition doesn't close until 6:30pm ET on Wednesday, August 5 (class 20).
 
 **Resources:**
 * For a great overview of the diversity of problems tackled by Kaggle competitions, watch [Kaggle Transforms Data Science Into Competitive Sport](https://www.youtube.com/watch?v=8w4UY66GKcM) (28 minutes) by Jeremy Howard (past president of Kaggle).
@@ -347,16 +343,9 @@ Tuesday | Thursday
 * These examples may help you to better understand the process of feature engineering: predicting the number of [passengers at a train station](https://medium.com/@chris_bour/french-largest-data-science-challenge-ever-organized-shows-the-unreasonable-effectiveness-of-open-8399705a20ef), identifying [fraudulent users of an online store](https://docs.google.com/presentation/d/1UdI5NY-mlHyseiRVbpTLyvbrHxY8RciHp5Vc-ZLrwmU/edit#slide=id.p), identifying [bots in an online auction](https://www.kaggle.com/c/facebook-recruiting-iv-human-or-bot/forums/t/14628/share-your-secret-sauce), predicting who will [subscribe to the next season of an orchestra](http://blog.kaggle.com/2015/01/05/kaggle-inclass-stanfords-getting-a-handel-on-data-science-winners-report/), and evaluating the [quality of e-commerce search engine results](http://blog.kaggle.com/2015/07/22/crowdflower-winners-interview-3rd-place-team-quartet/).
 
 -----
-**Homework:**
-* You will be assigned to review the project drafts of two of your peers. You have until next Monday to provide them with feedback, according to the [peer review guidelines](project/peer_review.md).
-* Read the "Wisdom of the crowds" section from MLWave's post on [Human Ensemble Learning](http://mlwave.com/human-ensemble-learning/).
-* **Optional:** Read the abstract from [Do We Need Hundreds of Classifiers to Solve Real World Classification Problems?](http://jmlr.csail.mit.edu/papers/volume15/delgado14a/delgado14a.pdf), as well as Kaggle CTO Ben Hamner's [comment](https://news.ycombinator.com/item?id=8719723) about the paper, paying attention to the mentions of "Random Forests".
 
-
-
-### Class 18: Ensembling
-* Finish decision trees lesson
-* Ensembling ([notebook](http://nbviewer.ipython.org/github/justmarkham/DAT7/blob/master/notebooks/18_ensembling.ipynb), [notebook code](code/18_ensembling_nb.py))
+### Class 15: Ensembles
+* Ensembling ([notebook](notebooks/18_ensembling.ipynb), [notebook code](code/18_ensembling_nb.py))
 
 **Resources:**
 * scikit-learn's documentation on [ensemble methods](http://scikit-learn.org/stable/modules/ensemble.html) covers both "averaging methods" (such as bagging and Random Forests) as well as "boosting methods" (such as AdaBoost and Gradient Tree Boosting).
@@ -366,7 +355,7 @@ Tuesday | Thursday
 * [Interpretable vs Powerful Predictive Models: Why We Need Them Both](https://medium.com/@chris_bour/interpretable-vs-powerful-predictive-models-why-we-need-them-both-990340074979) is a short post on how the tactics useful in a Kaggle competition are not always useful in the real world.
 
 -----
-
+<!--
 ### Class 19: Advanced scikit-learn and Clustering
 * Advanced scikit-learn ([code](code/19_advanced_sklearn.py))
     * [GridSearchCV](http://scikit-learn.org/stable/modules/grid_search.html): searching for optimal parameters ([exercise](code/19_grid_exercise.py))
